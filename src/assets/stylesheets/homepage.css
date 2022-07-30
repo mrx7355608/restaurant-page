@@ -1,0 +1,51 @@
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+    height: 80vh;
+    width: 100%;
+
+}
+#hero img {
+    width: 27%;
+    border-radius: 5px;
+
+}
+#hero #hero-content {
+    margin-right: 7rem;
+    max-width: 500px;
+}
+#hero #hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+    color: rgb(17, 16, 16);
+    font-family: "Lobster", "Segoe UI", sans-serif;
+    word-spacing: 7px;
+}
+#hero #hero-content p {
+    font-size: 21px;
+    line-height: 32px;
+    word-spacing: 1px;
+    color: #1b1b1b;
+    margin-top: 20px;
+}
+#order-btn {
+    border-radius: 50px;
+    background-color: var(--primaryColor);
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 5px var(--primaryColorTransparent);
+    margin-top: 30px;
+    padding: 11px 29px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#order-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px var(--primaryColorTransparent);
+}
