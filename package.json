@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "css-loader": "^6.7.1",
+    "csv-loader": "^3.0.5",
     "style-loader": "^3.3.1"
   }
 }

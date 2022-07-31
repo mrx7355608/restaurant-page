@@ -16,10 +16,10 @@ nav {
     position: fixed;
     top:0 ;
     
-    background-color: #e9e9e9;
+    background-color: #efefef;
     width: 100%;
     z-index: 1;
-    padding: 20px;
+    padding: 12px;
 
     display: flex;
     justify-content: space-around;
@@ -37,7 +37,7 @@ nav button{
 
     width: 80px ;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     background-color: transparent;
 
     color: rgb(12, 12, 12);
@@ -61,7 +61,7 @@ nav button:hover {
     color: var(--primaryColor);
 }
 #content {
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     justify-content: center;
@@ -78,4 +78,11 @@ footer {
 footer a {
     color: var(--primaryColor);
 }
-
+#logo {
+    position: relative;
+}
+#logo h2 {
+    position: absolute;
+    top: 15%;
+    left: 95%
+}

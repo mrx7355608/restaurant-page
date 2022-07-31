@@ -1,12 +1,8 @@
 import img from "./assets/images/introimg.jpg";
-import img2 from "./assets/images/secondimg.png";
 
 import "./assets/stylesheets/homepage.css";
 
 function homePage() {
-    // Changing title of the page
-    // document.title = "Restaurant";
-
     const hero = document.createElement("div");
     hero.setAttribute("id", "hero");
 
@@ -25,9 +21,6 @@ function homePage() {
 
     const heroImage = new Image();
     heroImage.src = img;
-    const secondHeroImg = new Image();
-    secondHeroImg.setAttribute("class", "hero-second-img");
-    secondHeroImg.src = img2;
 
     heroContentContainer.appendChild(heroHeading);
     heroContentContainer.appendChild(heroContent);

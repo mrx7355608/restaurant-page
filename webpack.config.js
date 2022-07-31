@@ -14,8 +14,12 @@ module.exports = {
                 use: ["style-loader", "css-loader"],
             },
             {
-                test: /\.(jpeg|png|gif|jpg)$/i,
+                test: /\.(jpeg|png|jfif|jpg)$/i,
                 type: "asset/resource",
+            },
+            {
+                test: /\.csv$/i,
+                use: ["csv-loader"],
             },
         ],
     },

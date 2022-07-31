@@ -1,0 +1,75 @@
+#menu-container {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 70px;
+}
+#menu-container  h1 {
+    font-family: "Lobster";
+    font-size: 40px;
+    text-align: center;
+    margin: 2rem 0rem 1rem 0rem;
+}
+#items-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-bottom: 60px;
+
+    gap: 15px;
+}
+#items-container .card {
+    max-width: 350px;
+    flex:auto;
+
+    border-radius: 8px; 
+    background: whitesmoke;
+    box-shadow: 0px 3px 5px lightgrey;
+    overflow: hidden;
+}
+#items-container .card .item-info {
+    flex:auto;
+    width: 100%;
+
+    padding: 30px 20px;
+    background: whitesmoke;
+}
+.item-info button {
+    border-radius: 500px;
+    background-color: var(--primaryColor);
+    padding: 9px 20px;
+
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    box-shadow: 0px 2px 5px var(--primaryColorTransparent);
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.item-info p {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.item-info h3 {
+    margin-top: -10px;
+    font-family: "Lobster", sans-serif;
+    font-size: 26px;
+}
+.item-info span {
+    font-weight: 500;
+    background: rgb(70 239 0 / 37%);
+    border-radius: 72px;
+    padding: 7px 27px;
+    margin: 0;
+    color: #0c6e00;
+    font-size: 15px;
+
+    text-align: end;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
