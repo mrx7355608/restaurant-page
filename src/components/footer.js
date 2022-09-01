@@ -1,22 +1,21 @@
 import githubIcon from "../assets/images/github.png";
+import DomHandler from "../domHandler";
 
 export default function footer() {
-    const container = document.createElement("footer");
-    const span = document.createElement("span");
-    const a = document.createElement("a");
-
-    // Text
-    span.innerText = "Developed by Fawad Imran";
+    const dom = new DomHandler();
+    const container = dom.createFooter();
+    const span = dom.createSpan("Developed by Fawad Imran");
+    const a = dom.createLink(null);
+    dom.addAttributes(a, {
+        href: "https://github.com/mrx7355608",
+        target: "_blank",
+    });
 
     // Github Icon
     const icon = new Image();
     icon.src = githubIcon;
 
-    // Link
-    a.href = "https://github.com/mrx7355608";
-    a.target = "_blank";
     a.appendChild(icon);
-
     container.appendChild(span);
     container.appendChild(a);
 
