@@ -46,7 +46,11 @@ class DomHandler {
     createFooter() {
         return document.createElement("footer");
     }
-
+    renderPage(page) {
+        const mainContainer = document.querySelector("#content");
+        Array.from(mainContainer.children).forEach((node) => node.remove());
+        mainContainer.appendChild(page());
+    }
     addAttributes(elem, attrsObj) {
         if (attrsObj) {
             Object.keys(attrsObj).forEach((attribute) => {
@@ -60,6 +64,8 @@ class DomHandler {
             });
         }
     }
-    bindClickListener() {}
+    bindClickListener(elem, callback) {
+        elem.addEventListener("click", callback);
+    }
 }
 export default DomHandler;

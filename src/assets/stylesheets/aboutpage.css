@@ -1,0 +1,26 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    color: white;
+}
+.about h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+.about p {
+    color: grey;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.social_links > * {
+    margin: 0px 10px;
+}
+.social_links > *:hover {
+    cursor: pointer;
+}
