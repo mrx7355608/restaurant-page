@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+:root {
+    --primaryColor: #ef0081;
+}
+/* DEFAULT STYLES CLASSES */
+.btn {
+    border-radius: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+}
+body {
+    background: rgb(7,7,7);
+}
+header {
+    background-color: transparent;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+nav .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+nav .logo {
+    filter: invert(1)
+}
+nav .brand_name {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: white;
+    display: inline;
+}
+nav .list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+nav .list_item {
+    color: lightgrey;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+nav .list_item:hover {
+    color: var(--primaryColor);
+}
+nav .cta {
+    border: 2px solid var(--primaryColor);
+    color: white;
+    background: transparent;
+    padding: 8px 22px;
+    letter-spacing: 1px;
+    font-size: 0.79rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+nav .cta:hover {
+    background: var(--primaryColor);
+}
+main {
+    display: flex;
+    height: calc(100vh - 140px);
+    align-items: center;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+.hero .hero_content {
+    color: white;
+    max-width: 40%;
+}
+.hero_content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 50px;
+}
+.hero_content p {
+    margin: 10px 0px 40px 0px;
+    line-height: 27px;
+    color: lightgrey;
+}
+.hero img {
+    width: 400px;
+}
+.hero .hero_btn {
+    background-color: var(--primaryColor);
+    color: white;
+    font-weight: 600;
+    padding: 13px 17px;
+    word-spacing: 2px;
+    font-size: 14px;
+}
+footer {
+    background-color: transparent;
+    padding: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.87rem;
+    text-align: center;
+}
+footer > a > img {
+    position: relative;
+    top: 5px;
+    left: 2px;
+    width: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+footer > a > img:hover {
+    transform: translateY(-4px);
+}
