@@ -7,6 +7,15 @@
 :root {
     --primaryColor: #ef0081;
 }
+::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--primaryColor);
+    border-radius: 20px;
+}
+
 /* DEFAULT STYLES CLASSES */
 .btn {
     border-radius: 0;
@@ -74,7 +83,7 @@ nav .cta:hover {
 }
 main {
     display: flex;
-    height: calc(100vh - 140px);
+    
     align-items: center;
 }
 .hero {

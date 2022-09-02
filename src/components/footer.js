@@ -1,4 +1,4 @@
-import githubIcon from "../assets/images/github.png";
+import githubIcon from "../assets/images/icons/github.png";
 import DomHandler from "../domHandler";
 
 export default function footer() {

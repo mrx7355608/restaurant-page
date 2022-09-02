@@ -2,8 +2,15 @@
 import footer from "./components/footer";
 import navbar from "./components/navbar";
 
-import "./assets/stylesheets/main.css";
+// Pages
 import home from "./pages/home";
+
+// CSS
+import "./assets/stylesheets/main.css";
+import "./assets/stylesheets/homepage.css";
+import "./assets/stylesheets/aboutpage.css";
+import "./assets/stylesheets/menupage.css";
+
 function main() {
     const container = document.querySelector("#content");
 

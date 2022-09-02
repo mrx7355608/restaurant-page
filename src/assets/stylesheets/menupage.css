@@ -1,0 +1,51 @@
+#content {
+    flex-direction: column;
+    height: 100%;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    padding: 20px;
+    width: clamp(300px, 80%, 1200px);
+}
+.menu_heading {
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.menu .menu_item {
+    min-width: 300px;
+    max-width: 400px;
+    min-height: auto;
+    padding: 20px;
+    flex: 1;
+}
+.menu_item > img {
+    width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.menu_item h3 {
+    color: whitesmoke;
+}
+.menu_item p {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    color: grey;
+    line-height: 24px;
+    font-size: 0.94rem;
+}
+.menu_item .read_more_btn {
+    padding: 10px 15px;
+    background: var(--primaryColor);
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
