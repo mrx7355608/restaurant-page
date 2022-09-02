@@ -16,7 +16,6 @@
     border-radius: 20px;
 }
 
-/* DEFAULT STYLES CLASSES */
 .btn {
     border-radius: 0;
     outline: none;
@@ -26,6 +25,7 @@
 body {
     background: rgb(7,7,7);
 }
+/* NAVBAR */
 header {
     background-color: transparent;
 }
@@ -81,50 +81,13 @@ nav .cta {
 nav .cta:hover {
     background: var(--primaryColor);
 }
+/* MAIN SECTION */
 main {
     display: flex;
     
     align-items: center;
 }
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 50px;
-}
-.hero .hero_content {
-    color: white;
-    max-width: 40%;
-}
-.hero_content h1 {
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 50px;
-}
-.hero_content p {
-    margin: 10px 0px 40px 0px;
-    line-height: 27px;
-    color: lightgrey;
-}
-.hero img {
-    width: 400px;
-}
-.hero .hero_btn {
-    background-color: var(--primaryColor);
-    color: white;
-    font-weight: 600;
-    padding: 13px 17px;
-    word-spacing: 2px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-    outline: none;
-}
-.hero .hero_btn:hover {
-    box-shadow: 0px 0px 10px var(--primaryColor);
-}
+/* FOOTER */
 footer {
     background-color: transparent;
     padding: 20px;

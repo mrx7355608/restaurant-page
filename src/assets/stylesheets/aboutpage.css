@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     height: calc(100vh - 140px);
-    width: 100%;
+    width: 50%;
 
     text-align: center;
     color: white;
@@ -17,6 +17,8 @@
     color: grey;
     font-size: 1.1rem;
     line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .social_links > * {
     margin: 0px 10px;

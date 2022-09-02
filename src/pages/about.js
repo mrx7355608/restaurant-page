@@ -9,7 +9,9 @@ export default function about() {
     const container = dom.createDiv();
     dom.addAttributes(container, { class: "about" });
     const heading = dom.createHeading("ABOUT", "h1");
-    const para = dom.createPara("We are");
+    const para = dom.createPara(
+        "We provide humanity a well balanced and healthy food. We see junk food spreading everywhere and people having health issues, so we felt a need for providing everyone a healthy food. This restaurant was established in order to serve humanity."
+    );
 
     const socialLinks = dom.createDiv();
     socialLinks.classList.add("social_links");
