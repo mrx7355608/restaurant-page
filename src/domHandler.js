@@ -29,22 +29,10 @@ class DomHandler {
         const div = document.createElement("div");
         return div;
     }
-    createHeader() {
-        return document.createElement("header");
-    }
-    createUnorderedList() {
-        return document.createElement("ul");
-    }
     createLinkItem(text) {
         const linkItem = document.createElement("li");
         linkItem.innerText = text;
         return linkItem;
-    }
-    createNav() {
-        return document.createElement("nav");
-    }
-    createFooter() {
-        return document.createElement("footer");
     }
     renderPage(page) {
         const mainContainer = document.querySelector("#content");

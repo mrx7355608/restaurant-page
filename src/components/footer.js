@@ -3,9 +3,11 @@ import DomHandler from "../domHandler";
 
 export default function footer() {
     const dom = new DomHandler();
-    const container = dom.createFooter();
+
+    const container = document.createElement("footer");
     const span = dom.createSpan("Developed by Fawad Imran");
     const a = dom.createLink(null);
+
     dom.addAttributes(a, {
         href: "https://github.com/mrx7355608",
         target: "_blank",
@@ -16,8 +18,6 @@ export default function footer() {
     icon.src = githubIcon;
 
     a.appendChild(icon);
-    container.appendChild(span);
-    container.appendChild(a);
-
+    container.append(span, a);
     return container;
 }

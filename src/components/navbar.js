@@ -1,7 +1,7 @@
 import DomHandler from "../domHandler";
-
+// Logo
 import logo from "../assets/images/logo.png";
-
+// Pages
 import about from "../pages/about";
 import home from "../pages/home";
 import menu from "../pages/menu";
@@ -9,15 +9,15 @@ import menu from "../pages/menu";
 export default function navbar() {
     const dom = new DomHandler();
 
-    const container = dom.createHeader();
+    const container = document.createElement("header");
     // Nav
-    const nav = dom.createNav();
+    const nav = document.createElement("nav");
     // brand
     const brandContainer = dom.createDiv();
     const brandName = dom.createHeading("Restaurant", "h3");
     const brandLogo = new Image();
     // links
-    const links = dom.createUnorderedList();
+    const links = document.createElement("ul");
     const navLink_home = dom.createLinkItem("Home");
     const navLink_about = dom.createLinkItem("About");
     const navLink_menu = dom.createLinkItem("Menu");

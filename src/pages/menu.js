@@ -1,5 +1,7 @@
 import DomHandler from "../domHandler";
+// Menu items data
 import menuItems from "../data/menuItems";
+// Components
 import itemCard from "../components/itemCard";
 
 export default function menu() {
