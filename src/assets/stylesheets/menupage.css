@@ -1,75 +1,51 @@
-#menu-container {
-    display: flex;
+#content {
     flex-direction: column;
-
-    margin-top: 70px;
+    height: 100%;
 }
-#menu-container  h1 {
-    font-family: "Lobster";
-    font-size: 40px;
-    text-align: center;
-    margin: 2rem 0rem 1rem 0rem;
-}
-#items-container {
+.menu {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin-bottom: 60px;
+    gap: 30px;
 
-    gap: 15px;
+    padding: 20px;
+    width: clamp(300px, 80%, 1200px);
 }
-#items-container .card {
-    max-width: 350px;
-    flex:auto;
-
-    border-radius: 8px; 
-    background: whitesmoke;
-    box-shadow: 0px 3px 5px lightgrey;
-    overflow: hidden;
-}
-#items-container .card .item-info {
-    flex:auto;
-    width: 100%;
-
-    padding: 30px 20px;
-    background: whitesmoke;
-}
-.item-info button {
-    border-radius: 500px;
-    background-color: var(--primaryColor);
-    padding: 9px 20px;
-
+.menu_heading {
     color: white;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    box-shadow: 0px 2px 5px var(--primaryColorTransparent);
-    margin: 0px 10px;
-    cursor: pointer;
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
-.item-info p {
-    margin-top: 5px;
-    margin-bottom: 25px;
+.menu .menu_item {
+    min-width: 300px;
+    max-width: 400px;
+    min-height: auto;
+    padding: 20px;
+    flex: 1;
 }
-.item-info h3 {
-    margin-top: -10px;
-    font-family: "Lobster", sans-serif;
-    font-size: 26px;
-}
-.item-info span {
-    font-weight: 500;
-    background: rgb(70 239 0 / 37%);
-    border-radius: 72px;
-    padding: 7px 27px;
-    margin: 0;
-    color: #0c6e00;
-    font-size: 15px;
-
-    text-align: end;
-}
-.card img {
+.menu_item > img {
     width: 100%;
-    height: auto;
+    max-height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.menu_item h3 {
+    color: whitesmoke;
+}
+.menu_item p {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    color: #9c9c9c;
+    line-height: 24px;
+    font-size: 0.94rem;
+}
+.menu_item .read_more_btn {
+    padding: 10px 15px;
+    background: var(--primaryColor);
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
 }

@@ -1,35 +1,28 @@
-import homePage from "./homePage";
-import menuPage from "./menupage";
-import contactPage from "./contactPage";
+// Components
+import footer from "./components/footer";
+import navbar from "./components/navbar";
 
+// Pages
+import home from "./pages/home";
+
+// CSS
 import "./assets/stylesheets/main.css";
+import "./assets/stylesheets/homepage.css";
+import "./assets/stylesheets/aboutpage.css";
+import "./assets/stylesheets/menupage.css";
 
-function Main() {
-    const content = document.querySelector("#content");
+function main() {
+    const container = document.querySelector("#content");
 
-    // Homepage
-    const home = homePage();
+    // Navbar
+    const Navbar = navbar();
+    document.body.appendChild(Navbar);
 
-    // Menupage
-    const menu = menuPage();
+    // Content
+    const homePage = home();
+    container.appendChild(homePage);
 
-    // Contactpage
-    const contact = contactPage();
-
-    document.querySelector("#menu").addEventListener("click", () => {
-        Array.from(content.children).forEach((elem) => elem.remove());
-        content.appendChild(menu);
-    });
-    document.querySelector("#contact").addEventListener("click", () => {
-        Array.from(content.children).forEach((elem) => elem.remove());
-        content.appendChild(contact);
-    });
-    document.querySelector("#home").addEventListener("click", () => {
-        Array.from(content.children).forEach((elem) => elem.remove());
-        content.appendChild(home);
-    });
-
-    document.title = "Restaurant";
-    content.appendChild(home);
+    return container;
 }
-Main();
+document.body.appendChild(main());
+document.body.appendChild(footer());
